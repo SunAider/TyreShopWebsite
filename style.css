@@ -1,0 +1,466 @@
+@charset "UTF-8";
+@import url("grid.css");
+
+img {
+	max-width:100%;
+	height: auto;/*高さ自動*/
+}
+a {
+    display:block;
+    color: #000;
+    text-decoration-line: none;
+}
+a:hover { 
+    color: #999;
+}
+a img:hover {
+	opacity: 0.8;
+}
+.grayback {
+	background-color: #898989;
+	color: #fff;
+	padding: 1rem;
+}
+.underline {
+	border-bottom: 3px solid #003399;
+	padding-bottom: 0.5rem;
+}
+.center {
+	text-align: center;
+}
+
+/*ヘッダー
+-------------------------------------*/
+.head {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 0 0 0;
+}
+
+.head h1 { 
+    padding: 1rem 0;
+}
+
+.head img {
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.head span {
+    vertical-align: middle;
+}
+
+.telbox {
+    margin-left: 32%;
+    font-size: 3.0rem;
+    color: rgb(223, 0, 5);
+    padding: 1rem 0 0 0;
+}
+
+.menu {
+	background-color: #898989;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+nav li {
+    flex: 1 0 auto;
+    margin-bottom: 0;
+}
+nav li a {
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+}
+nav a:hover {
+    background-color: #c9caca;    
+    color: #fff;
+}
+
+nav a {
+    padding: 2rem 1rem;
+	display: block;
+}
+
+@media screen and (min-width: 768px){
+/* PC時はMENUボタンを非表示 */
+#open,#close {
+    display: none !important;
+}
+
+#navi {
+    display: block !important;
+}
+}
+
+@media screen and (max-width: 768px){
+.head {
+	flex-direction: column;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.telbox {
+	margin-left: 0;
+	text-align: center;
+}
+.head #open,#close  {
+    position: absolute;
+    top: 20px;
+    right: 12px;
+    }
+nav ul {
+	flex-direction: column;
+}
+
+nav li {
+	padding-top: 0;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 0;
+}
+/* スマホ時はMENUボタンを表示 */
+#open {
+    display: block;
+    background: url(../img/button.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 12px;
+}
+#close  {
+    display: block;
+    background: url(../img/button2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 12px;
+}
+/* スマホ時はメニューを非表示 */
+#navi {
+    display: none;
+}
+}
+
+/*メイン画像
+-------------------------------------*/
+.mainimg {
+        position: relative;
+}
+
+.mainimg img {
+	width: 100vw;
+}
+
+.mainimg .title {
+        position: absolute;
+        width: 100vw;
+        text-align: center;
+        top: 45%;
+        left: 0;
+        font-weight: bold;
+        font-size: 3vw;
+        color: #fff;
+        background: rgb(223, 0, 5);
+}
+
+.mainimg .title span {
+        font-size: 2vw;
+}
+
+/*メイン買取バナー
+-------------------------------------*/
+.banner {
+     text-align:center;
+     margin-bottom: 5%;
+}
+
+/*ライン
+-------------------------------------*/
+.line {
+     width: 100%;
+     height: 15px;
+     background: #666;
+     margin-bottom: 15px;
+}
+
+
+/*メインコンテンツ
+-------------------------------------*/
+main {
+    margin: 5rem 0 5rem 0;
+}
+
+.margin-bottom-0 {
+    margin-bottom: 0;
+}
+
+/*新着情報
+-------------------------------------*/
+.news h2 {
+    background-color: #898989;
+	color: #fff;
+	padding: 1rem;
+}
+.news li {
+    list-style-type: none;
+	border-bottom: 1px solid #ccc;
+	padding: 0.5rem 0;
+}
+
+/*フッター
+-------------------------------------*/
+footer {
+    background-color: #898989;
+    padding: 5rem 0;
+	color: #fff;
+}
+footer h5 {
+    border-bottom: 2px solid #fff;
+}
+
+/*コピーライト
+-------------------------------------*/
+.copyright {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #fff;
+}
+.copyright a {
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/*ページトップへ戻るボタン
+-------------------------------------*/
+#pagetop {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+#pagetop a {
+    display: block;
+    background: rgb(223, 0, 5);
+    color: #fff;
+    width: 50px;
+    padding: 10px 5px;
+    text-align: center;
+}
+#pagetop a:hover {
+    background: rgb(250, 102, 106); 
+}
+
+/*パンくずリスト
+-----------------------------------*/
+.breadcrumb {
+    margin: 0 0 1em 0;
+    padding: 0;	
+}
+.breadcrumb li {
+    list-style-type: none;
+}
+.breadcrumb li a {
+    display: inline-block;
+    color: #959fa5;
+}
+
+
+/*トップページ
+-----------------------------------*/
+.text-center {
+    text-align: center;
+}
+
+.flex2 {
+  display: flex;
+  margin-bottom: 30px;
+  border: 1px solid #000;
+  padding: 30px;
+}
+
+.flex2 .text-box {
+    margin-left: 30px;
+}
+
+.flex2 .text-box p:last-child {
+    margin-bottom: 0;
+}
+
+.text-box h3 {
+   border-bottom: 5px solid rgb(223, 0, 5);
+   width: 100%;
+   padding-bottom: 10px;
+   font-size: 2.5rem;
+   font-weight: bold; 
+}
+
+.contact {
+   width: 50%;
+   height: auto;
+   background: rgb(223, 0, 5);
+   margin: 30px auto;
+   padding: 10px;
+   transition: .3s;
+}
+
+.LINE {
+   width: 50%;
+   height: auto;
+   background: rgb(6, 199, 85);
+   margin: 30px auto;
+   padding: 10px;
+   transition: .3s;
+}
+
+
+.contact:hover {
+   opacity: 0.5;
+}
+
+.contact p {
+   margin: 0;
+}
+
+.contact p a {
+   color: #fff;
+   font-size: 3.2rem;
+   text-align: center;
+}
+
+
+
+/*買取出張の流れ
+-----------------------------------*/
+.pos {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.padding {
+  padding: 0 8px;
+}
+
+.row img {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.row .text1 {
+   width: 40%;
+   position: absolute;
+   top: -8px;
+   left: -8px;
+   text-align: center;
+   padding: 3px;
+   margin-bottom: 0;
+   background: rgb(223, 0, 5);
+   color: #fff;
+}
+
+.row .text2 {
+   width: 100%;
+   position: absolute;
+   bottom: -25px;
+   text-align: center;
+   padding: 3px;
+   margin-top: 0;
+   background: #000;
+   color: #fff;
+}
+
+.flow-step h3 {
+   font-size: 16px;
+   width: 100%;
+   text-align: center;
+}
+
+.flow-step-title1 {
+  display: inline-block;
+  padding: 3px;
+  width: 30%;
+  color: #fff;
+  background: #666;
+}
+
+.flow-step-title2 {
+  display: inline-block;
+  padding: 3px;
+  width: 70%;
+  color: #fff;
+  background: rgb(223, 0, 5);
+}
+
+.flex {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.flex img {
+  width: 40%;
+}
+
+.flex p {
+  width: 60%;
+}
+
+/*買取規約
+-----------------------------------*/
+.terms_list ul,
+.terms_list > ol {
+  list-style: none;
+
+}
+
+
+
+.terms_list ul,
+.terms_list ol {
+  list-style-position: outside;
+}
+
+.terms_list li {
+  margin-bottom: 0;
+}
+
+.terms_list li ol li {
+  margin-bottom: 0;
+}
+
+.terms_list li ul,
+.terms_list li ol {
+  margin-top: 0;
+}
+
+.terms_list .indent {
+  display: inline-block;
+  text-indent: 1em;
+}
+
+
+
+/* 768px以下の表示 */
+@media ( max-width : 768px ) {
+  .onlyPC {
+    display: none;
+  }
+
+  .flex p {
+    width: 100%;
+  }
+
+  .flex2 .text-box {
+    margin-left: 0;
+  }
+}
