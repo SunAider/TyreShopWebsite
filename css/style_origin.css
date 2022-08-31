@@ -660,24 +660,24 @@ footer h5 {
   content: "";
   display: block;
   height: 190px;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(10, 10, 10, 0.02)), to(rgba(10, 10, 10, 0.02))), url(../img/top7.png) no-repeat center center;
-  background: linear-gradient(0deg, rgba(10, 10, 10, 0.02), rgba(10, 10, 10, 0.02)), url(../img/top7.png) no-repeat center center;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(10, 10, 10, 0.02)), to(rgba(10, 10, 10, 0.02))), url(../img/Group1.png) no-repeat center center;
+  background: linear-gradient(0deg, rgba(10, 10, 10, 0.02), rgba(10, 10, 10, 0.02)), url(../img/Group1.png) no-repeat center center;
   background-size: cover;
 }
 
 @media screen and (min-width: 768px) {
   .top-img:before {
     height: 450px;
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(10, 10, 10, 0.4)), to(rgba(10, 10, 10, 0.4))), url(../img/top7.png) no-repeat center center;
-    background: linear-gradient(0deg, rgba(10, 10, 10, 0.4), rgba(10, 10, 10, 0.4)), url(../img/top7.png) no-repeat center center;
+    /* background: -webkit-gradient(linear, left bottom, left top, from(rgba(10, 10, 10, 0.4)), to(rgba(10, 10, 10, 0.4))), url(../img/Group1.png) no-repeat center center;
+    background: linear-gradient(0deg, rgba(10, 10, 10, 0.4), rgba(10, 10, 10, 0.4)), url(../img/Group1.png) no-repeat center center; */
   }
 }
 
-@media screen and (min-width: 1025px) {
+/* @media screen and (min-width: 1025px) {
   .top-img:before {
     height: 670px;
   }
-}
+} */
 
 .top-img__box {
   position: relative;
