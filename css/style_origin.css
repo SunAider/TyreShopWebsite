@@ -318,8 +318,8 @@ footer h5 {
    /* height: 70px; */
    background: rgb(223, 0, 5);
    margin: 30px auto;
-   margin-bottom: 10px;
-   padding: 1px 5vw 1px 5vw;
+   margin-bottom: 0px;
+   padding: 1px 3vw 1px 3vw;
    /* /* padding-left: 10px; */
    /* padding-right: 10px; */
    transition: .3s;
@@ -342,8 +342,9 @@ footer h5 {
 
 .contact p a {
    color: #fff;
-   font-size: 3.8vw;
+   font-size: 4.5vw;
    text-align: center;
+   line-height: 6vw;
 }
 
 
@@ -1197,15 +1198,12 @@ ul li {
 @media screen and (max-width: 767px) {
   .LINE p> img{
     width: 40%;
+    vertical-align: middle;
   }
 }
-/* @media screen and (max-width: 767px) {
-  .h2_LINE {
-    font-size: 1.5rem;
+
+@media screen and (max-width: 767px) {
+  .ques_section {
+    line-height: 5vh;
   }
 }
-@media screen and (min-width: 550px) {
-  .h2_LINE {
-    font-size: 2.2rem;
-  }
-} */
